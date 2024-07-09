@@ -33,7 +33,7 @@
       <button @click="activeID=2" class="flex text-gray-500 font-bold py-2 px-4 rounded w-full hover:text-gray-800" >
         <span>Question #2</span>
         <span class="m-auto"></span>
-        <span x-show="activeID !=== 2" class="ml-4">+</span>
+        <span x-show="activeID !== 2" class="ml-4">+</span>
         <span x-show="activeID === 2" class="ml-4">-</span>
       </button>
       <div x-show="activeID === 2" class="mt-2 py-2 px-4">
