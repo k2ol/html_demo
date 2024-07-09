@@ -1,2 +1,20 @@
 <script src="./src/tailwindcss@3.4.4.js"></script>
 <script src="./src/alpinejs@3.14.1.js"></script>
+
+<div x-data="{ activeTab: 1 }">
+  <div class="flex space-x-4 border-b">
+    <button @click="activeTab = 1" class="p-4 rounded-t-lg" :class="{ 'bg-gray-100': activeTab === 1 }">Tab 1</button>
+    <button @click="activeTab = 2" class="p-4 rounded-t-lg" :class="{ 'bg-gray-100': activeTab === 2 }">Tab 2</button>
+    <button @click="activeTab = 3" class="p-4 rounded-t-lg" :class="{ 'bg-gray-100': activeTab === 3 }">Tab 3</button>
+  </div>
+
+  <div x-show="activeTab === 1">
+    <p>这是标签页 1 的内容。</p>
+  </div>
+  <div x-show="activeTab === 2">
+    <p>这是标签页 2 的内容。</p>
+  </div>
+  <div x-show="activeTab === 3">
+    <p>这是标签页 3 的内容。</p>
+  </div>
+</div>
