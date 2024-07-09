@@ -1,3 +1,22 @@
-I<script src="./src/tailwindcss@3.4.4.js"></script>
+<script src="./src/tailwindcss@3.4.4.js"></script>
 <script src="./src/alpinejs@3.14.1.js"></script>
 
+<div class="flex justify-center py-4">
+  <div x-data="{ openDialog: false }">
+    <button @click="openDialog = true" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Open Dialog
+    </button>
+
+    <div x-show="openDialog" class="fixed inset-0 bg-black bg-opacity-50"></div>
+
+    <div x-show="openDialog" class="fixed inset-0 flex items-center justify-center z-50">
+      <div class="bg-white p-8 rounded shadow-lg">
+        <h2 class="text-xl font-bold mb-4">Dialog Content</h2>
+        <p>This is the content of the dialog.</p>
+        <button @click="openDialog = false" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
