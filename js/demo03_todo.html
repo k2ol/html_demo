@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>待辦事項</title>
+</head>
+<body>
+    <input type="text" class="todo" placeholder="待辦事項">
+    <button class="btn">+</button>
+    <ul class="lists"></ul>
+
+    <script>
+        const todo = document.querySelector('.todo');
+        const lists = document.querySelector('.lists');
+        const btn = document.querySelector('.btn');
+
+        function addTodo(){
+            if (todo.value === ''){
+                return;
+            }
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <input type="checkbox" class="check">
+                <label>${todo.value}</label>
+                <button class='del'>X</button>
+            `
+            const del = li.querySelector('.del');
+
+            del.addEventListener('click', function(){
+                li.remove();
+            });
+            
+            lists.append(li);
+            todo.value = '';
+        }
+
+        btn.addEventListener('click',addTodo);
+
+        todo.addEventListener("keyup", function(e){
+            if(e.key==="Enter"){
+                addTodo();
+            }
+        })
+    </script>
+</body>
+</html>
