@@ -1078,7 +1078,46 @@ async function getData() {
 - 使用有意義的變數和函式名稱
 - 處理錯誤和異常
 
+## JavaScript 保留关键字不可以用作变量、标签或者函数名。
+
+<!-- _class: tinytext -->
+
+abstract	|arguments	|boolean	|break	|byte
+---|---|---|---|---
+case	|catch	|char	|class*	|const
+continue	|debugger	|default	|delete	|do
+double	|else	|enum*	|eval	|export*
+extends*	|false	|final	|finally	|float
+for	|function	|goto	|if	|implements
+import*	|in	|instanceof	|int	|interface
+let	|long	|native	|new	|null
+package	|private	|protected	|public	|return
+short	|static	|super*	|switch	|synchronized
+this	|throw	|throws	|transient	|true
+try	|typeof	|var	|void	|volatile
+while	|with	|yield	|
+* 标记的关键字是 ECMAScript5 中新添加的。
+
+## JavaScript 对象、属性和方法
+您也应该避免使用 JavaScript 内置的对象、属性和方法的名称作为 Javascript 的变量或函数名：
+
+Array	|Date	|eval	|function	|hasOwnProperty
+---|---|---|---|---
+Infinity	|isFinite	|isNaN	|isPrototypeOf	|length
+Math	|NaN	|name	|Number	|Object
+prototype	|String	|toString	|undefined	|valueOf
+
+## HTML 事件句柄
+除此之外，您还应该避免使用 HTML 事件句柄的名称作为 Javascript 的变量及函数名。
+
+实例：
+
+onblur	|onclick	|onerror	|onfocus
+---|---|---|---
+onkeydown	|onkeypress	|onkeyup	|onmouseover
+onload	|onmouseup	|onmousedown	|onsubmit
+
 ## 實用資源
 
+- [菜鸟教程 JavaScript](https://www.runoob.com/js/js-tutorial.html)
 - [W3Schools JavaScript 教程](https://www.w3schools.com/js/)
-- [MDN Web Docs JavaScript 參考](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript)
