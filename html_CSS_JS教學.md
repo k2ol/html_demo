@@ -319,10 +319,8 @@ paginate: true
 
 ## 實用資源
 
+- [菜鸟教程 HTML 教程](https://www.runoob.com/html/html-tutorial.html)
 - [W3Schools HTML 教程](https://www.w3schools.com/html/)
-- [MDN Web Docs](https://developer.mozilla.org/zh-TW/docs/Web/HTML)
-- [HTML 驗證器](https://validator.w3.org/)
-- [HTML 參考手冊](https://www.w3schools.com/tags/default.asp)
 
 # CSS 基礎教學
 <!-- _class: trans -->
