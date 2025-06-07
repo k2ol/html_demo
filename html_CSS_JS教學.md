@@ -930,8 +930,8 @@ resize	|定义元素是否可以改变大小	|3
 
 ## 實用資源
 
+- [菜鸟教程 CSS](https://www.runoob.com/css/css-tutorial.html)
 - [W3Schools CSS 教程](https://www.w3schools.com/css/)
-- [MDN Web Docs CSS 參考](https://developer.mozilla.org/zh-TW/docs/Web/CSS)
 
 
 # JavaScript 基礎教學
