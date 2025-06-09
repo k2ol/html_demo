@@ -1087,7 +1087,7 @@ async function getData() {
 
 ## JavaScript 保留关键字不可以用作变量、标签或者函数名。
 
-<!-- _class: tinytext -->
+<!-- _class: tinytext table -->
 
 abstract	|arguments	|boolean	|break	|byte
 ---|---|---|---|---
@@ -1106,6 +1106,9 @@ while	|with	|yield	|
 * 标记的关键字是 ECMAScript5 中新添加的。
 
 ## JavaScript 对象、属性和方法
+
+<!-- _class: table -->
+
 您也应该避免使用 JavaScript 内置的对象、属性和方法的名称作为 Javascript 的变量或函数名：
 
 Array	|Date	|eval	|function	|hasOwnProperty
@@ -1116,6 +1119,8 @@ prototype	|String	|toString	|undefined	|valueOf
 
 ## HTML 事件句柄
 除此之外，您还应该避免使用 HTML 事件句柄的名称作为 Javascript 的变量及函数名。
+
+<!-- _class: table -->
 
 实例：
 

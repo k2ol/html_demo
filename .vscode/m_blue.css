@@ -1673,3 +1673,10 @@ section.hugetext em {
 section.hugetext pre {
   font-size: 120%;
 }
+
+section.table td, section.table th , section.table thead, section.table tbody {
+  font-weight: normal; 
+  border: 1px solid var(--color-main);
+  border-top: 1px solid var(--color-main);
+  border-bottom: 1px solid var(--color-main);
+}
