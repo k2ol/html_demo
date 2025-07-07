@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+}
+.m-auto {
+  margin: auto;
+}
+.banner {
+  width: 100vw;
+  height: 400px;
+}
+.col-2 > article {
+  width: 50vw;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 创建两个相等宽度的列 */
+  gap: 10px; /* 列之间的间距 */
+  padding: 20px;
+}
+.bg-gray {
+  background-color: rgb(249, 247, 244);
+}
+.banner > img {
+  width: 100vw;
+}
+.banner > h2 {
+  background-color: rgb(0, 130, 37);
+  user-select: none;
+  z-index: 3;
+}
+
+.weather-icon{
+  width:22px;
+  height:15px;
+}
+header{
+  padding: 18px 0;
+}
+.cx-wrap--page{
+  max-width: 1400px;
+  margin: auto;
+}
+.cx-list{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.cx-list li{
+  margin-right: 22px;
+}
+.flex{
+  display: flex;
+}
+.t01{
+  font-size: .74287em;
+  color: #69797e;
+}
+.sep::after{
+  content: ' | ';
+  margin-left: 10px;
+}
+.mr-10px{
+  margin-right: 10px;
+}
