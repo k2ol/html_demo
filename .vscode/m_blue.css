@@ -63,6 +63,10 @@ h4, h5 {
   color: var(--color-much);
 }
 
+h6{
+  margin: 5px;
+}
+
 header {
   top: 12px;
 }
@@ -1613,7 +1617,7 @@ section.footnote .bdiv::before {
   margin-bottom: 1em;
 }
 
-section.tinytext>p, section.tinytext>ul, section.tinytext>ol, section.tinytext>table, section.tinytext>blockquote {
+section.tinytext>p, section.tinytext>ul, section.tinytext>ol, section.tinytext table, section.tinytext>blockquote {
   font-size: 60%;
 }
 section.tinytext code {
@@ -1679,4 +1683,9 @@ section.table td, section.table th , section.table thead, section.table tbody {
   border: 1px solid var(--color-main);
   border-top: 1px solid var(--color-main);
   border-bottom: 1px solid var(--color-main);
+}
+
+section.tableNoBorder td, section.tableNoBorder th , section.tableNoBorder thead, section.tableNoBorder tbody {
+  border: none;
+  width: 100vw;
 }
